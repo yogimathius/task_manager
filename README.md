@@ -22,8 +22,8 @@ The project will include basic authentication and nested resources, which will a
 
 ### Database Setup 
 - [X] Use `rails db:migrate` to create the database tables for tasks and subtasks.
-- [ ] Add some seed data to the db/seeds.rb file. (Use (Faker)[https://github.com/faker-ruby/faker])
-- [ ] `rails console` to check it out!
+- [X] Add some seed data to the db/seeds.rb file. (Use (Faker)[https://github.com/faker-ruby/faker])
+- [X] `rails console` to check it out!
 
 ### Routing and Auth 
 - [ ] Add a namespace to the `TasksController` and `SubtasksController` to make admin-only resources.
