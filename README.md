@@ -12,16 +12,16 @@ The project will include basic authentication and nested resources, which will a
 ## What we will cover:
 ### Project Setup 
 
-- [ ] Create a new Rails application  (`rails new task_manager`)
-- [ ] Generate a scaffold for tasks  (`rails generate scaffold Task title:string description:text done:boolean completed_at:datetime`)
-- [ ] Generate a scaffold for subtasks  (`rails generate scaffold Subtask title:string description:text done:boolean completed_at:datetime task:references`)
+- [X] Create a new Rails application  (`rails new task_manager`)
+- [X] Generate a scaffold for tasks  (`rails generate scaffold Task title:string description:text done:boolean completed_at:datetime`)
+- [X] Generate a scaffold for subtasks  (`rails generate scaffold Subtask title:string description:text done:boolean completed_at:datetime task:references`)
 
 ### Add associations
-- [ ] Task `has_many` subtasks
-- [ ] Subtask `belongs_to` task
+- [X] Task `has_many` subtasks
+- [X] Subtask `belongs_to` task
 
 ### Database Setup 
-- [ ] Use `rails db:migrate` to create the database tables for tasks and subtasks.
+- [X] Use `rails db:migrate` to create the database tables for tasks and subtasks.
 - [ ] Add some seed data to the db/seeds.rb file. (Use (Faker)[https://github.com/faker-ruby/faker])
 - [ ] `rails console` to check it out!
 
