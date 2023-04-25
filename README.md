@@ -33,8 +33,8 @@ The project will include basic authentication and nested resources, which will a
 - [X] update admin + non-admin controllers to have respective routes based on privileges
 
 ### Adding CSS and Front End Scripts 
-- [ ] `yarn add bootstrap jquery popper.js`
-- [ ] Add below block of code to `config/webpack/environment.js`
+- [X] `yarn add bootstrap jquery popper.js`
+- [X] Add below block of code to `config/webpack/environment.js`
 
 ```
 const webpack = require("webpack") 
@@ -46,20 +46,20 @@ environment.plugins.append("Provide", new webpack.ProvidePlugin({
 }))  
 ```
 
-- [ ] Add below block of code to `app/javascript/packs/application.js`:
+- [X] Add below block of code to `app/javascript/packs/application.js`:
 
 ```
 import "bootstrap"
 import "../stylesheets/application"
 ```
 
-- [ ] Add `*= require bootstrap` to `app/assets/stylesheets/application.css`
-- [ ] Add a link to the admin section in the navbar.
+- [X] Add `*= require bootstrap` to `app/assets/stylesheets/application.css`
+- [X] Add a link to the admin section in the navbar.
 
 ### Admin Forms 
-- [ ] Demonstrate how to create a new task in the admin section, including adding subtasks.
+- [X] Demonstrate how to create a new task in the admin section, including adding subtasks.
 
-### Active Record Scoping 
+### Active Record Scoping
 - [ ] Define a scope in the Task and Subtask models that filters them by whether they are completed or not.
 - [ ] Demonstrate how to use this scope to filter tasks in the TasksController index action.
 
@@ -67,12 +67,12 @@ import "../stylesheets/application"
 - [ ] Define a validation in the Task model that ensures the title attribute is present and not blank.
 - [ ] Demonstrate how to handle this validation error in the TasksController create action.
 
-### Debugging 
-- [ ] Demonstrate the use of byebug or binding.pry to debug code when necessary.
-
 ### Callbacks 
 - [ ] Add a callback to the Task model that automatically sets the done attribute to true if all of its subtasks are marked as done.
 - [ ] Demonstrate the use of this callback by creating a new task and adding some subtasks to it, then marking all subtasks as done.
+
+### Debugging 
+- [ ] Demonstrate the use of byebug or binding.pry to debug code when necessary.
 
 ### Where to go from here?
 - [ ] Testing

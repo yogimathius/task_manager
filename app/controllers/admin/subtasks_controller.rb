@@ -26,7 +26,7 @@ class Admin::SubtasksController < ApplicationController
 
     respond_to do |format|
       if @subtask.save
-        format.html { redirect_to subtask_url(@subtask), notice: "Subtask was successfully created." }
+        format.html { redirect_to admin_subtask_url(@subtask), notice: "Subtask was successfully created." }
         format.json { render :show, status: :created, location: @subtask }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -68,7 +68,7 @@ class Admin::SubtasksController < ApplicationController
     def subtask_params
       params.require(:subtask).permit(:title, :description, :done, :completed_at, :task_id)
     end
-    
+
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
       username === "admin" && password === "secret"

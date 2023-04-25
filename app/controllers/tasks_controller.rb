@@ -3,7 +3,8 @@ class TasksController < ApplicationController
 
   # GET /tasks or /tasks.json
   def index
-    @tasks = Task.all
+    binding.break
+    @tasks = filter_params[:is_completed] ? Task.completed : Task.all
 
     render :json => @tasks
   end
@@ -20,7 +21,11 @@ class TasksController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def task_params
-      params.require(:task).permit(:title, :description, :done, :completed_at)
+    # def task_params
+    #   params.require(:task).permit(:title, :description, :done, :completed_at)
+    # end
+
+    def filter_params
+      params.permit(:is_completed)
     end
 end
