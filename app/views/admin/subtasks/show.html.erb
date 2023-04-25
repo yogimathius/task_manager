@@ -3,8 +3,8 @@
 <%= render @subtask %>
 
 <div>
-  <%= link_to "Edit this subtask", edit_subtask_path(@subtask) %> |
-  <%= link_to "Back to subtasks", subtasks_path %>
+  <%= link_to "Edit this subtask", edit_admin_subtask_path(@subtask) %> |
+  <%= link_to "Back to subtasks", admin_subtasks_path %>
 
   <%= button_to "Destroy this subtask", @subtask, method: :delete %>
 </div>

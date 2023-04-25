@@ -6,7 +6,7 @@
   <% @tasks.each do |task| %>
     <%= render task %>
     <p>
-      <%= link_to "Show this task", task %>
+      <%= link_to "Show this task", admin_task_path(task) %>
     </p>
   <% end %>
 </div>

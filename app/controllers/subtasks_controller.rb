@@ -4,19 +4,13 @@ class SubtasksController < ApplicationController
   # GET /subtasks or /subtasks.json
   def index
     @subtasks = Subtask.all
+
+    render :json => @subtasks
   end
 
   # GET /subtasks/1 or /subtasks/1.json
   def show
-  end
-
-  # GET /subtasks/new
-  def new
-    @subtask = Subtask.new
-  end
-
-  # GET /subtasks/1/edit
-  def edit
+    render :json => @subtask
   end
 
   # POST /subtasks or /subtasks.json

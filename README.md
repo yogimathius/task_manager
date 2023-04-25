@@ -26,11 +26,11 @@ The project will include basic authentication and nested resources, which will a
 - [X] `rails console` to check it out!
 
 ### Routing and Auth 
-- [ ] Add a namespace to the `TasksController` and `SubtasksController` to make admin-only resources.
-  - [ ] `rails g controller admin/tasks `
-  - [ ] `rails g controller admin/subtasks `
-- [ ] Demonstrate the use of `before_action` to require authentication for admin-only resources.
-- [ ] update admin + non-admin controllers to have respective routes based on privileges
+- [X] Add a namespace to the `TasksController` and `SubtasksController` to make admin-only resources.
+  - [X] `rails g controller admin/tasks `
+  - [X] `rails g controller admin/subtasks `
+- [X] Demonstrate the use of `before_action` to require authentication for admin-only resources.
+- [X] update admin + non-admin controllers to have respective routes based on privileges
 
 ### Adding CSS and Front End Scripts 
 - [ ] `yarn add bootstrap jquery popper.js`

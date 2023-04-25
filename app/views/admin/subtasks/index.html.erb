@@ -6,9 +6,9 @@
   <% @subtasks.each do |subtask| %>
     <%= render subtask %>
     <p>
-      <%= link_to "Show this subtask", subtask %>
+      <%= link_to "Show this subtask", admin_subtask_path(subtask) %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New subtask", new_subtask_path %>
+<%= link_to "New subtask", new_admin_subtask_path %>
