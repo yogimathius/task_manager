@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_25_171027) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_25_183832) do
   create_table "subtasks", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -23,7 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_25_171027) do
   end
 
   create_table "tasks", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.text "description"
     t.boolean "done"
     t.datetime "completed_at"

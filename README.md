@@ -60,16 +60,16 @@ import "../stylesheets/application"
 - [X] Demonstrate how to create a new task in the admin section, including adding subtasks.
 
 ### Active Record Scoping
-- [ ] Define a scope in the Task and Subtask models that filters them by whether they are completed or not.
-- [ ] Demonstrate how to use this scope to filter tasks in the TasksController index action.
+- [X] Define a scope in the Task and Subtask models that filters them by whether they are completed or not.
+- [X] Demonstrate how to use this scope to filter tasks in the TasksController index action.
 
 ### Active Record Validations 
-- [ ] Define a validation in the Task model that ensures the title attribute is present and not blank.
+- [X] Define a validation in the Task model that ensures the title attribute is present and not blank.
 - [ ] Demonstrate how to handle this validation error in the TasksController create action.
 
 ### Callbacks 
-- [ ] Add a callback to the Task model that automatically sets the done attribute to true if all of its subtasks are marked as done.
-- [ ] Demonstrate the use of this callback by creating a new task and adding some subtasks to it, then marking all subtasks as done.
+- [X] Add a callback to the Task model that automatically sets the done attribute to true if all of its subtasks are marked as done.
+- [X] Demonstrate the use of this callback by creating a new task and adding some subtasks to it, then marking all subtasks as done.
 
 ### Debugging 
 - [ ] Demonstrate the use of byebug or binding.pry to debug code when necessary.

@@ -3,8 +3,7 @@ class TasksController < ApplicationController
 
   # GET /tasks or /tasks.json
   def index
-    binding.break
-    @tasks = filter_params[:is_completed] ? Task.completed : Task.all
+    @tasks = filter_params[:is_done] ? Task.done : Task.all
 
     render :json => @tasks
   end
@@ -26,6 +25,6 @@ class TasksController < ApplicationController
     # end
 
     def filter_params
-      params.permit(:is_completed)
+      params.permit(:is_done)
     end
 end
